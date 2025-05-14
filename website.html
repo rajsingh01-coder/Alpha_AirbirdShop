@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Section</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">AirBird</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="auth-btn login-btn">Login</a>
+                    <a href="login.html" class="auth-btn signup-btn">Sign Up</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+  <section class="home-section" id="home">
+    <div class="content">
+      <h1>Welcome to Airbird</h1>
+      <p>Your journey begins here. Experience the sky like never before!</p>
+      <button onclick="scrollToNextSection()">Explore</button>
+    </div>
+  </section>
+
+    <section class="about-us-intro" id="about-intro">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Airbird! We provide premium air travel services to give you an unforgettable experience in the sky.</p>
+      <p>Our company is committed to excellence, offering unmatched comfort, safety, and convenience for all your air travel needs.</p>
+      <a href="about-us-mission.html" class="btn-next">Learn More</a>
+    </div>
+  </section>
+  <section class="about-us-mission" id="about-mission">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>At Airbird, our mission is to provide the highest quality air travel experience, ensuring your journey is as comfortable, luxurious, and safe as possible.</p>
+
+      <div class="values">
+        <h3>Our Core Values</h3>
+        <ul>
+          <li>Comfort and Safety</li>
+          <li>Innovation and Excellence</li>
+          <li>Customer-Centric Approach</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+
+      <!-- Customer Testimonials Section -->
+      <div class="customer-testimonials">
+        <h3>What Our Customers Say</h3>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <img src="1.avif" alt="Customer 1">
+            <p>"Airbird provides the best flying experience. I felt like I was flying in luxury!"</p>
+            <h4>John Doe</h4>
+            <p>Traveler</p>
+          </div>
+          <div class="testimonial-card">
+            <img src="2.avif" alt="Customer 2">
+            <p>"The safety measures were impeccable. I will always choose Airbird for my travels."</p>
+            <h4>Jane Smith</h4>
+            <p>Business Traveler</p>
+          </div>
+          <div class="testimonial-card">
+            <img src="3.avif" alt="Customer 3">
+            <p>"The service was exceptional, and the experience was beyond my expectations. Highly recommend!"</p>
+            <h4>Emily Clark</h4>
+            <p>Leisure Traveler</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+
+    <section class="features-section" id="Features">
+        <div class="container">
+            <h1>Our Features</h1>
+            <div class="feature" onclick="toggleFeatureDetail('feature1')">
+                <h2>Advanced Navigation</h2>
+                <p id="feature1">Click for more details...</p>
+            </div>
+            <div class="feature" onclick="toggleFeatureDetail('feature2')">
+                <h2>Seamless Connectivity</h2>
+                <p id="feature2">Click for more details...</p>
+            </div>
+            <div class="feature" onclick="toggleFeatureDetail('feature3')">
+                <h2>Eco-Friendly Technology</h2>
+                <p id="feature3">Click for more details...</p>
+            </div>
+            <div class="feature" onclick="toggleFeatureDetail('feature4')">
+                <h2>High-Performance Battery</h2>
+                <p id="feature4">Click for more details...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pricing-section" id="Pricing">
+        <div class="container">
+            <h1>Airbird Pricing Plans</h1>
+            <p>Choose the perfect plan for your needs and take your Airbird experience to new heights!</p>
+            <div class="pricing-cards">
+                <div class="pricing-card" onclick="togglePricingDetail('basic')">
+                    <img src="air.avif" alt="Basic Plan Image" class="pricing-image">
+                    <h2>Basic Plan</h2>
+                    <p id="basic">$99 / Month</p>
+                </div>
+                <div class="pricing-card" onclick="togglePricingDetail('standard')">
+                    <img src="air2.avif" alt="Standard Plan Image" class="pricing-image">
+                    <h2>Standard Plan</h2>
+                    <p id="standard">$199 / Month</p>
+                </div>
+                <div class="pricing-card" onclick="togglePricingDetail('premium')">
+                    <img src="air3.webp" alt="Premium Plan Image" class="pricing-image">
+                    <h2>Premium Plan</h2>
+                    <p id="premium">$299 / Month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Events Section -->
+    <section class="events-section" id="About">
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <div class="event-card">
+                <img src="up.webp" alt="Airbird Demo Day" class="section-image">
+                <h2>Airbird Demo Day</h2>
+                <p>Join us for a live demo of the latest Airbird models and features!</p>
+                <p><strong>Date:</strong> June 15, 2025</p>
+                <p><strong>Location:</strong> San Francisco, CA</p>
+            </div>
+            <div class="event-card">
+                <img src="up2.avif" alt="Airbird Expo 2025" class="section-image">
+                <h2>Airbird Expo 2025</h2>
+                <p>Meet the Airbird team at the largest drone expo in the country.</p>
+                <p><strong>Date:</strong> July 20, 2025</p>
+                <p><strong>Location:</strong> Las Vegas, NV</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h1>Latest News</h1>
+            <div class="news-card">
+                <img src="new2.avif" alt="Airbird Expands to Europe" class="section-image">
+                <h2>Airbird Expands to Europe</h2>
+                <p>Airbird is now available in several European countries. Find out what this means for drone enthusiasts!</p>
+                <p><strong>Date:</strong> May 5, 2025</p>
+            </div>
+            <div class="news-card">
+                <img src="news.avif" alt="New Software Update Released" class="section-image">
+                <h2>New Software Update Released</h2>
+                <p>Airbird’s latest software update brings exciting new features and bug fixes for improved user experience.</p>
+                <p><strong>Date:</strong> April 25, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section">
+        <div class="container">
+            <h1>Special Offers</h1>
+            <div class="offer-card">
+                <img src="off.avif" alt="10% Off Your First Airbird" class="section-image">
+                <h2>10% Off Your First Airbird</h2>
+                <p>Sign up today and get 10% off your first Airbird purchase!</p>
+                <p><strong>Valid Until:</strong> June 30, 2025</p>
+            </div>
+            <div class="offer-card">
+                <img src="off2.avif" alt="Free Shipping on All Orders" class="section-image">
+                <h2>Free Shipping on All Orders</h2>
+                <p>Enjoy free shipping on all orders over $200. Don't miss this limited-time offer!</p>
+                <p><strong>Valid Until:</strong> May 31, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h1>New Features</h1>
+            <div class="feature-card">
+                <img src="new.avif" alt="Real-Time Tracking" class="section-image">
+                <h2>Real-Time Tracking</h2>
+                <p>Track your Airbird in real time with our new GPS and live monitoring system.</p>
+            </div>
+            <div class="feature-card">
+                <img src="new1.avif" alt="AI-Powered Flight" class="section-image">
+                <h2>AI-Powered Flight</h2>
+                <p>Let Airbird fly autonomously using the latest AI technology for smoother and safer flights.</p>
+            </div>
+        </div>
+    </section>
+
+      <div class="contact-section" id="Contact">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p><strong>Address:</strong> 123 Street Name, City, Country</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> contact@example.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.023438845037!2d-73.96828518413978!3d40.761260079326636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258533bbf33bf%3A0x5ba8c54b67bead36!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1689184309432!5m2!1sen!2sus" 
+                        frameborder="0" style="border:0;width:100%;height:100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Attractive Content -->
+        <div class="attractive-content">
+            <h3>Our Commitment</h3>
+            <p>We believe in delivering exceptional service with a focus on customer satisfaction. Let us assist you with all your inquiries.</p>
+            <img src="up3.avif" alt="Attractive Image">
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer style="background-color: #2c3e50; color: white; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="font-size: 14px;">© 2025 ALPHA. All Rights Reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #3498db; font-size: 20px;">Facebook</a>
+                <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #3498db; font-size: 20px;">Twitter</a>
+                <a href="https://instagram.com" target="_blank" style="margin: 0 10px; color: #3498db; font-size: 20px;">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" style="margin: 0 10px; color: #3498db; font-size: 20px;">LinkedIn</a>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="#contact" style="color: #3498db; text-decoration: none;">Contact Us</a> | 
+                <a href="#privacy-policy" style="color: #3498db; text-decoration: none;">Privacy Policy</a> | 
+                <a href="#terms" style="color: #3498db; text-decoration: none;">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
